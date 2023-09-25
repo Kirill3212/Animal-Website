@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <link rel="stylesheet" href="./home.css" />
 
-    <header>
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Header/NavBar -->
+    <header class="main-header">
       <div class="logo">
-        <a href="/pages/Home/home.html">
-          <img src="/assets/logo/logo-black.png" alt="logo" />
-        </a>
+        <a href="/pages/Home/home.html"> Animals </a>
       </div>
-      <nav class="links">
+      <nav class="desktop-main-menu">
         <ul>
           <li><a href="../About/about.html">About</a></li>
           <li><a href="../Blog/blog.html">Blog</a></li>
@@ -19,10 +21,21 @@
           <li><a href="../Favorites/favorites.html">Favorites</a></li>
           <li><a href="../Lists/lists.html">Lists</a></li>
           <li><a href="../SignIn/signIn.html">SignIn</a></li>
-          <li><a href="../SignUp/signUp.html">SignUp</a></li>
         </ul>
       </nav>
     </header>
-  </head>
-  <body></body>
+
+    <!-- Main -->
+    <section class="main-section sec-a">
+      <div class="main-section-inner">
+        <h1>See Beauty In Animals</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          ullam blanditiis sit mollitia labore voluptas aliquid impedit, minima
+          illo maxime nulla eveniet assumenda!
+        </p>
+        <button type="button" id="visit-btn">Visit Event</button>
+      </div>
+    </section>
+  </body>
 </html>
