@@ -1,5 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One&family=Familjen+Grotesk:wght@400;600;700&family=Hanken+Grotesk:ital,wght@1,800&family=Manrope:wght@200&family=Nanum+Myeongjo&family=Playfair+Display&family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap');
+
 *, *::before, *::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+:root{
+    --white: #fff;
+    --darkgrey: #333;
+    --lightgrey: #c7c7c7;
+    --verylightgrey: #f7f7f7;;
+    --black: #000;
+    --red: #D31E1E;
+    --lightbrown: #e28743;
+    --lightblue: rgb(95, 177, 222);
+    --lightgreen: rgb(67, 227, 67);
+    --brownyellow: rgb(255, 193, 36);
+    --gold: rgb(255, 221, 0);
+    --standartBorderRadius: 5px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Header/Navbar */
+.main-header{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 4;
+    padding: 15px;
+    background-color: var(--black);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    font-size: 28px;
+    text-decoration: none;
+    color:var(--white);
+    transition: 1.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-left: 20px;
+}
+
+.logo a:hover{
+    color: var(--lightbrown)
+}
+
+.desktop-main-menu ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.desktop-main-menu ul li a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 1.2rem;
+    color: var(--white);
+    position: relative;
+    padding-bottom: 2px;
+    transition: 1.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.desktop-main-menu ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--lightbrown);
+    transform: scaleX(0);
+    transition: 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transform-origin:top;
+}
+
+.desktop-main-menu ul li a:hover{
+    color: var(--lightbrown);
+}
+
+.desktop-main-menu ul li a:hover::after{
+    transform: scaleX(1);
+    transition-duration: 0.8s;
+}
+
+/* images */
+.main-section.sec-a {
+    background-image: url('/assets/home-images/homeImg1.jpg');
+}
+.main-section.sec-b {
+    background-image: url('/assets/home-images/homeImg2.jpg');
+}
+.main-section.sec-c {
+    background-image: url('/assets/home-images/homeImg3.jpg');
+}
+
+/* Main */
+.main-section{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-section img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Main inner */
+.main-section-inner.sec-a{
+    position: absolute;
+    width: 400px;
+    bottom: 170px;
+    left: 150px;
+}
+.main-section-inner.sec-b{
+    position: absolute;
+    width: 400px;
+    bottom: 100px;
+    right: 150px;
+}
+.main-section-inner.sec-c{
+    position: absolute;
+    width: 400px;
+    bottom: 70px;
+    left: 150px;
+}
+
+.main-section-inner h1{
+    color: var(--lightbrown);
+    font-size: 3.7rem;
+    line-height: 75px;
+    margin-bottom: 10px;
+}
+
+.main-section-inner p{
+    color: var(--white);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    line-height: 35px;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    min-width: 130px;
+    padding: 10px 40px;
+    margin-top: 10px;
+    border: 2px solid var(--lightbrown);
+    text-transform: uppercase;
+    font-weight: bold;
+    overflow: hidden;
+    z-index: 2;
+    text-decoration: none;
+    color: var(--white);
+    border-radius: var(--standartBorderRadius);
+}
+
+.btn .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    color: #000;
+    z-index: -1;
+    transform: translateY(100%);
+    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover span {
+    color: var(--lightbrown);
+}
+
+.btn:hover .hover {
+    transform: translateY(0);
+}
+
+/* Collections images */
+.reptiles {
+    background-image: url('/assets/collection-section-images/reptile.jpg');
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.mammals {
+    background-image: url('/assets/collection-section-images//mammals.jpg');
+}
+.fish {
+    background-image: url('/assets/collection-section-images//fish.jpg');
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.insects {
+    background-image: url('/assets/collection-section-images//insects.jpg');
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.amphibians{
+    background-image: url('/assets/collection-section-images//amphibians.jpg');
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.birds {
+    background-image: url('/assets/collection-section-images//birds.jpg');
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* Collections */
+.collections-section{
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    background-color: #495846;
+}
+
+.collections-section h1{
+    color: var(--white);
+    background-color: var(--black);
+    margin-bottom: 30px;
+    padding: 70px;
+    font-size: 35px;
+    border-radius: var(--standartBorderRadius);
+}
+
+.collection-section-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 450px 550px 350px;
+    grid-gap: 20px;
+}
+
+.col{
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: var(--standartBorderRadius);
+    position: relative;
+}
+
+/* Collections inner-section positioning */
+
+/* Default inner-section positioning */
+.col-inner{
+    position: absolute;
+}
+
+.col-inner a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border: 2px solid black;
+    border-radius: var(--standartBorderRadius);
+    padding: 10px;
+}
+
+.col-inner p{
+    margin: 10px 0 30px 0;
+}
+
+.col-inner p strong{
+    color: var(--brownyellow);
+}
+
+/* Reptiles inner-section positioning*/
+.inner-reptiles {
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.inner-reptiles h2 {
+    color: var(--white);
+    font-size: 2.9rem;
+}
+
+.inner-reptiles p{
+    color: var(--lightbrown);
+}
+
+.inner-reptiles p strong {
+    color: var(--brownyellow);
+}
+
+.inner-reptiles a{
+    color: var(--white);
+    border-color: var(--white);
+}
+
+/* Mammals inner-section positioning*/
+.inner-mammals {
+    left: 0px;
+    top: 20%;
+    width: 200px;
+}
+
+.inner-mammals h2 {
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+.inner-mammals p{
+    color: var(--lightbrown);
+}
+
+.inner-mammals p strong {
+    color: var(--verylightgrey);
+}
+
+.inner-mammals a{
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 13px;
+}
+
+/* Fish inner-section positioning*/
+.inner-fish {
+    right: 100px;
+    top: 25%;
+    width: 400px;
+}
+
+.inner-fish h2 {
+    color: var(--white);
+    font-size: 4.3rem;
+}
+
+.inner-fish p{
+    color: var(--lightbrown);
+}
+
+.inner-fish p strong {
+    color: var(--lightblue);
+}
+
+.inner-fish a{
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 21px;
+}
+
+/* Insects inner-section positioning*/
+.inner-insects {
+    right: 100px;
+    top: 25%;
+    width: 400px;
+}
+
+.inner-insects h2 {
+    color: var(--white);
+    font-size: 5.5rem;
+}
+
+.inner-insects p{
+    color: var(--lightbrown);
+}
+
+.inner-insects p strong {
+    color: var(--gold);
+}
+
+.inner-insects a{
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 21px;
+}
+
+/* Amphibians inner-section positioning*/
+.inner-amphibians {
+    left: 20px;
+    top: 5%;
+    width: 200px;
+}
+
+.inner-amphibians h2 {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.inner-amphibians p {
+    color: var(--lightbrown);
+}
+
+.inner-amphibians p strong {
+    color: var(--lightgreen);
+}
+
+.inner-amphibians a {
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 13px;
+}
+
+/* Birds inner-section positioning*/
+.inner-birds {
+    left: 80px;
+    top: 10%;
+    width: 400px;
+}
+
+.inner-birds h2 {
+    color: var(--white);
+    font-size: 2.8rem;
+}
+
+.inner-birds p {
+    color: var(--lightbrown);
+}
+
+.inner-birds p strong {
+    color: var(--verylightgrey);
+}
+
+.inner-birds a {
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 18px;
+}
+

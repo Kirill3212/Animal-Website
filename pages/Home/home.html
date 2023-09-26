@@ -3,15 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <link rel="stylesheet" href="./home.css" />
 
-    <header>
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Header/NavBar -->
+    <header class="main-header">
       <div class="logo">
-        <a href="/pages/Home/home.html">
-          <img src="/assets/logo/logo-black.png" alt="logo" />
-        </a>
+        <a href="/pages/Home/home.html"> Animals </a>
       </div>
-      <nav class="links">
+      <nav class="desktop-main-menu">
         <ul>
           <li><a href="../About/about.html">About</a></li>
           <li><a href="../Blog/blog.html">Blog</a></li>
@@ -19,10 +21,139 @@
           <li><a href="../Favorites/favorites.html">Favorites</a></li>
           <li><a href="../Lists/lists.html">Lists</a></li>
           <li><a href="../SignIn/signIn.html">SignIn</a></li>
-          <li><a href="../SignUp/signUp.html">SignUp</a></li>
         </ul>
       </nav>
     </header>
-  </head>
-  <body></body>
+
+    <!-- Main -->
+    <section class="main-section sec-a">
+      <div class="main-section-inner sec-a">
+        <h1>See Beauty In Animals</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          ullam blanditiis sit mollitia labore voluptas aliquid impedit, minima
+          illo maxime nulla eveniet assumenda!
+        </p>
+        <a href="#" class="btn">
+          <div class="hover"></div>
+          <span>See More</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="main-section sec-b">
+      <div class="main-section-inner sec-b">
+        <h1>Discover Unbelivable Creatures</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          ullam blanditiis sit mollitia labore voluptas aliquid impedit, minima
+          illo maxime nulla eveniet assumenda!
+        </p>
+        <a href="#" class="btn">
+          <div class="hover"></div>
+          <span>Discover</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="main-section sec-c">
+      <div class="main-section-inner sec-c">
+        <h1>Help To Save Animals</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          ullam blanditiis sit mollitia labore voluptas aliquid impedit, minima
+          illo maxime nulla eveniet assumenda!
+        </p>
+        <a href="#" class="btn">
+          <div class="hover"></div>
+          <span>Help</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Collections -->
+    <section class="collections-section">
+      <h1>All You Want To Know About Animals</h1>
+
+      <div class="collection-section-inner">
+        <!-- Reptiles -->
+        <div class="col reptiles">
+          <div class="col-inner inner-reptiles">
+            <h2>Reptiles</h2>
+            <p>
+              Currently About
+              <strong class="species-amount">10,000</strong> Species In The
+              World
+            </p>
+            <a href="#"> Discover Reptiles </a>
+          </div>
+        </div>
+
+        <!-- Mammals -->
+        <div class="col mammals">
+          <div class="col-inner inner-mammals">
+            <h2>Mammals</h2>
+            <p>
+              Currently About
+              <strong class="species-amount">5,500</strong> Species In The World
+            </p>
+            <a href="#"> Discover Mammals </a>
+          </div>
+        </div>
+
+        <!-- Fish -->
+        <div class="col fish">
+          <div class="col-inner inner-fish">
+            <h2>Fish</h2>
+            <p>
+              Currently About
+              <strong class="species-amount">35,000</strong> Species In The
+              World
+            </p>
+            <a href="#"> Discover Fish </a>
+          </div>
+        </div>
+
+        <!-- Insects -->
+        <div class="col insects">
+          <div class="col-inner inner-insects">
+            <h2>Insects</h2>
+            <p>
+              Currently About
+              <strong class="species-amount">900,000</strong> Species In The
+              World
+            </p>
+            <a href="#"> Discover Insects </a>
+          </div>
+        </div>
+
+        <!-- Amphibians -->
+        <div class="col amphibians">
+          <div class="col-inner inner-amphibians">
+            <h2>Amphibians</h2>
+            <p>
+              Currently About
+              <strong class="species-amount">6,000</strong> Species In The World
+            </p>
+            <a href="#"> Discover Amphibians </a>
+          </div>
+        </div>
+
+        <!-- Birds -->
+        <div class="col birds">
+          <div class="col-inner inner-birds">
+            <h2>Birds</h2>
+            <p>
+              Currently About
+              <strong class="species-amount">18,000</strong> Species In The
+              World
+            </p>
+            <a href="#"> Discover Birds </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/script.js"></script>
+  </body>
 </html>
