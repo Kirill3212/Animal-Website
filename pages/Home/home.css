@@ -233,10 +233,9 @@ body{
 
 .collections-section h1{
     color: var(--white);
-    background-color: var(--black);
     margin-bottom: 30px;
     padding: 70px;
-    font-size: 35px;
+    font-size: 50px;
     border-radius: var(--standartBorderRadius);
 }
 
@@ -385,7 +384,7 @@ body{
 
 /* Amphibians inner-section positioning*/
 .inner-amphibians {
-    left: 20px;
+    left: 5px;
     top: 5%;
     width: 200px;
 }
@@ -435,3 +434,63 @@ body{
     font-size: 18px;
 }
 
+/* Footer */
+footer{
+    background-color: var(--black);
+    color: var(--white);
+}
+.copyright{
+    text-align: center;
+    padding-bottom: 15px ;
+}
+
+.footer-inner{
+    background-color: var(--black);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 40px;
+}
+
+.foot-section h3{
+    margin: 13px 0;
+    color: var(--verylightgrey);
+}
+
+.foot-contact h2{
+    color: var(--lightbrown);
+    font-size: 1.7rem;
+}
+
+.foot-contact p{
+    margin: 3px 0;
+}
+
+.icons-footer i{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.icons-footer i:hover{
+    color: var(--lightbrown);
+}
+
+.foot-about ul, .foot-myaccount ul{
+    list-style-type: none;
+}
+
+.foot-about ul li, .foot-myaccount ul li{
+    margin: 5px 0;
+}
+
+.foot-about ul li a, .foot-myaccount ul li a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.copyright{
+    color: var(--darkgrey);
+}
+
+/* Animations */
