@@ -14,10 +14,16 @@
     --black: #000;
     --red: #D31E1E;
     --lightbrown: #e28743;
+    --lightblue: rgb(95, 177, 222);
+    --lightgreen: rgb(67, 227, 67);
+    --brownyellow: rgb(255, 193, 36);
+    --gold: rgb(255, 221, 0);
+    --standartBorderRadius: 5px;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Header/Navbar */
@@ -91,13 +97,13 @@ body{
 
 /* images */
 .main-section.sec-a {
-    background-image: url('/assets/images/homeImg1.jpg');
+    background-image: url('/assets/home-images/homeImg1.jpg');
 }
 .main-section.sec-b {
-    background-image: url('/assets/images/homeImg2.jpg');
+    background-image: url('/assets/home-images/homeImg2.jpg');
 }
 .main-section.sec-c {
-    background-image: url('/assets/images/homeImg3.jpg');
+    background-image: url('/assets/home-images/homeImg3.jpg');
 }
 
 /* Main */
@@ -163,7 +169,7 @@ body{
     z-index: 2;
     text-decoration: none;
     color: var(--white);
-    border-radius: 5px;
+    border-radius: var(--standartBorderRadius);
 }
 
 .btn .hover {
@@ -186,3 +192,246 @@ body{
 .btn:hover .hover {
     transform: translateY(0);
 }
+
+/* Collections images */
+.reptiles {
+    background-image: url('/assets/collection-section-images/reptile.jpg');
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.mammals {
+    background-image: url('/assets/collection-section-images//mammals.jpg');
+}
+.fish {
+    background-image: url('/assets/collection-section-images//fish.jpg');
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.insects {
+    background-image: url('/assets/collection-section-images//insects.jpg');
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.amphibians{
+    background-image: url('/assets/collection-section-images//amphibians.jpg');
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.birds {
+    background-image: url('/assets/collection-section-images//birds.jpg');
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* Collections */
+.collections-section{
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    background-color: #495846;
+}
+
+.collections-section h1{
+    color: var(--white);
+    background-color: var(--black);
+    margin-bottom: 30px;
+    padding: 70px;
+    font-size: 35px;
+    border-radius: var(--standartBorderRadius);
+}
+
+.collection-section-inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 350px 450px 550px 350px;
+    grid-gap: 20px;
+}
+
+.col{
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: var(--standartBorderRadius);
+    position: relative;
+}
+
+/* Collections inner-section positioning */
+
+/* Default inner-section positioning */
+.col-inner{
+    position: absolute;
+}
+
+.col-inner a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border: 2px solid black;
+    border-radius: var(--standartBorderRadius);
+    padding: 10px;
+}
+
+.col-inner p{
+    margin: 10px 0 30px 0;
+}
+
+.col-inner p strong{
+    color: var(--brownyellow);
+}
+
+/* Reptiles inner-section positioning*/
+.inner-reptiles {
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.inner-reptiles h2 {
+    color: var(--white);
+    font-size: 2.9rem;
+}
+
+.inner-reptiles p{
+    color: var(--lightbrown);
+}
+
+.inner-reptiles p strong {
+    color: var(--brownyellow);
+}
+
+.inner-reptiles a{
+    color: var(--white);
+    border-color: var(--white);
+}
+
+/* Mammals inner-section positioning*/
+.inner-mammals {
+    left: 0px;
+    top: 20%;
+    width: 200px;
+}
+
+.inner-mammals h2 {
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+.inner-mammals p{
+    color: var(--lightbrown);
+}
+
+.inner-mammals p strong {
+    color: var(--verylightgrey);
+}
+
+.inner-mammals a{
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 13px;
+}
+
+/* Fish inner-section positioning*/
+.inner-fish {
+    right: 100px;
+    top: 25%;
+    width: 400px;
+}
+
+.inner-fish h2 {
+    color: var(--white);
+    font-size: 4.3rem;
+}
+
+.inner-fish p{
+    color: var(--lightbrown);
+}
+
+.inner-fish p strong {
+    color: var(--lightblue);
+}
+
+.inner-fish a{
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 21px;
+}
+
+/* Insects inner-section positioning*/
+.inner-insects {
+    right: 100px;
+    top: 25%;
+    width: 400px;
+}
+
+.inner-insects h2 {
+    color: var(--white);
+    font-size: 5.5rem;
+}
+
+.inner-insects p{
+    color: var(--lightbrown);
+}
+
+.inner-insects p strong {
+    color: var(--gold);
+}
+
+.inner-insects a{
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 21px;
+}
+
+/* Amphibians inner-section positioning*/
+.inner-amphibians {
+    left: 20px;
+    top: 5%;
+    width: 200px;
+}
+
+.inner-amphibians h2 {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.inner-amphibians p {
+    color: var(--lightbrown);
+}
+
+.inner-amphibians p strong {
+    color: var(--lightgreen);
+}
+
+.inner-amphibians a {
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 13px;
+}
+
+/* Birds inner-section positioning*/
+.inner-birds {
+    left: 80px;
+    top: 10%;
+    width: 400px;
+}
+
+.inner-birds h2 {
+    color: var(--white);
+    font-size: 2.8rem;
+}
+
+.inner-birds p {
+    color: var(--lightbrown);
+}
+
+.inner-birds p strong {
+    color: var(--verylightgrey);
+}
+
+.inner-birds a {
+    color: var(--white);
+    border-color: var(--white);
+    font-size: 18px;
+}
+
