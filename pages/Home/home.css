@@ -6,6 +6,20 @@
     padding: 0;
 }
 
+/* Custom scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 :root{
     --white: #fff;
     --darkgrey: #333;
@@ -236,7 +250,7 @@ body{
     color: var(--white);
     margin-bottom: 30px;
     padding: 70px;
-    font-size: 50px;
+    font-size: 55px;
     border-radius: var(--standartBorderRadius);
 }
 
@@ -450,7 +464,7 @@ footer{
 
 .foot-section h3{
     margin: 13px 0;
-    color: var(--verylightgrey);
+    color: var(--lightgrey);
 }
 
 .foot-contact h2{
@@ -482,6 +496,11 @@ footer{
 .foot-about ul li a, .foot-myaccount ul li a{
     text-decoration: none;
     color: var(--white);
+}
+
+.foot-about ul li a:hover,
+.foot-myaccount ul li a:hover{
+    color: var(--lightgrey);
 }
 
 .copyright{
