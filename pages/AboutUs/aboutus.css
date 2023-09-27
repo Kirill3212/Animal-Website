@@ -270,6 +270,90 @@ main h1 strong{
     }
 }
 
+/* Story */
+.story h2{
+    margin-bottom: 15px;
+}
+
+/* Section Default */
+.about-sec{
+    padding: 30px 60px;
+    position: relative;
+    height: 100vh;
+    background-color: var(--verylightgrey);
+}
+
+/* Goal Section */
+.goals h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.goals h1 strong{
+    color: var(--lightbrown);
+}
+
+/* Scroll Container */
+.scroll-container {
+    display: flex;
+    background-color: var(--darkgrey);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 15px;
+    border-radius: var(--standartBorderRadius);
+}
+
+.scroll-sec{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    margin: 0 10px;
+}
+
+.scroll-sec img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.scroll-txt{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20%;
+    background-color: var(--verylightgrey);
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+
+.scroll-txt a{
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.scroll-txt a strong{
+    font-size: 12px;
+    margin-left: 13px;
+    color: var(--militaryGreen);
+}
+
+.scroll-txt a strong:hover{
+    color: var(--darkgrey);
+}
+
+/* Achievements Section */
+/* .achievements{
+
+} */
 
 /* Footer */
 footer {

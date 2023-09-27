@@ -1,3 +1,4 @@
+// Gallery
 const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 console.log(prevBtn, nextBtn);
