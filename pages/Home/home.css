@@ -31,6 +31,7 @@
     --lightblue: rgb(95, 177, 222);
     --lightgreen: rgb(51, 180, 51);
     --brownyellow: rgb(255, 193, 36);
+    --militaryGreen: #495846;
     --brown: brown;
     --gold: rgb(255, 221, 0);
     --standartBorderRadius: 5px;
@@ -243,7 +244,7 @@ body{
     padding: 30px;
     width: 100%;
     text-align: center;
-    background-color: #495846;
+    background-color: var(--militaryGreen);
 }
 
 .collections-section h1{
