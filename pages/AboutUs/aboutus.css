@@ -421,20 +421,41 @@ main h1 strong{
     text-align: center;
     font-size: 3rem;
     margin-top: -40px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .achievements h1 strong {
     color: var(--lightbrown);
 }
 
+.achievements-inner{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Achievements text */
+.achievements-text{
+    width: 45%;
+}
+
+.achievements-text h2{
+    margin-bottom: 15px;
+}
+
+.achievements-text h3{
+    margin: 20px 0;
+}
+
+.achievements-text h3 strong{
+    color: var(--lightbrown);
+}
+
 /* Achievements-container */
 .achievements-container{
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 55%;
-    height: 430px;
+    width: 48%;
+    height: 400px;
     border-radius: var(--standartBorderRadius);
 }
 
