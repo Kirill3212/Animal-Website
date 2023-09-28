@@ -413,6 +413,10 @@ main h1 strong{
 }
 
 /* Achievements Section */
+.achievements{
+    height: 120vh;
+}
+
 .achievements h1 {
     text-align: center;
     font-size: 3rem;
@@ -422,6 +426,117 @@ main h1 strong{
 
 .achievements h1 strong {
     color: var(--lightbrown);
+}
+
+/* Achievements-container */
+.achievements-container{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55%;
+    height: 430px;
+    border-radius: var(--standartBorderRadius);
+}
+
+.achievements-slide{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.ach-prev-btn,
+.ach-next-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    margin-top: -22px;
+    padding: 13px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ach-next-btn {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.ach-prev-btn:hover,
+.ach-next-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--lightbrown);
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.achievements-container-inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.achievements-container-inner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: var(--standartBorderRadius);
+    border-top-right-radius: var(--standartBorderRadius);
+}
+
+.achievements-slide-num {
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom-right-radius: var(--standartBorderRadius);
+    border-top-left-radius: var(--standartBorderRadius);
+    font-size: 15px;
+    padding: 8px 10px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievements-row{
+    height: 100px;
+}
+
+.achievements-column{
+    float: left;
+    width: 16.66%;
+    height: 100%;
+}
+
+.achievements-column img{
+    width: 100%;
+    height: 100%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
 }
 
 /* Footer */
