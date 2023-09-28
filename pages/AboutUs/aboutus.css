@@ -313,6 +313,18 @@ main h1 strong{
     position: relative;
 }
 
+.scroll-sec-inner{
+    height: 82%;
+}
+
+.scroll-sec-inner:hover .scroll-img{
+    filter: blur(1.1px);
+}
+
+.scroll-sec-inner:hover .middle{
+    opacity: 1;
+}
+
 .middle{
     position: absolute;
     top: 50%;
@@ -371,7 +383,7 @@ main h1 strong{
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 20%;
+    height: 18%;
     background-color: var(--verylightgrey);
     font-size: 18px;
     font-weight: 600;
