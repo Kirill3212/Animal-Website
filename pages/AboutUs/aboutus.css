@@ -310,6 +310,49 @@ main h1 strong{
     flex-direction: column;
     background-color: var(--white);
     margin: 0 10px;
+    position: relative;
+}
+
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    width: 110px;
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--standartBorderRadius);
+    padding: 10px 15px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+    text-align: center;
+}
+
+.middle span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.middle span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.middle:hover span {
+    padding-right: 25px;
+}
+
+.middle:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .scroll-sec img {
@@ -317,6 +360,8 @@ main h1 strong{
     border-top-right-radius: 10px;
     width: 400px;
     height: 400px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .scroll-txt{
@@ -340,6 +385,11 @@ main h1 strong{
     right: 15px;
 }
 
+.scroll-txt .scr-word{
+    color: green;
+    margin: 0 5px;
+}
+
 .scroll-txt a strong{
     font-size: 12px;
     margin-left: 13px;
@@ -350,10 +400,29 @@ main h1 strong{
     color: var(--darkgrey);
 }
 
-/* Achievements Section */
-/* .achievements{
+.scroll-container::-webkit-scrollbar {
+    width: 5px;
+}
 
-} */
+.scroll-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: var(--lightbrown);
+}
+
+/* Achievements Section */
+.achievements h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+
+.achievements h1 strong {
+    color: var(--lightbrown);
+}
 
 /* Footer */
 footer {

@@ -1,7 +1,22 @@
+// Scroll Section
+const scrollImgs = Array.from(document.querySelectorAll(".scroll-img"));
+const middleElements = Array.from(document.querySelectorAll(".middle"));
+
+scrollImgs.forEach((img, index) => {
+  img.addEventListener("mouseover", () => {
+    scrollImgs[index].style.filter = "blur(1.1px)";
+    middleElements[index].style.opacity = "1";
+  });
+
+  // img.addEventListener("mouseout", () => {
+  //   scrollImgs[index].style.filter = "blur(0px)";
+  //   middleElements[index].style.opacity = "0";
+  // });
+});
+
 // Gallery
 const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
-console.log(prevBtn, nextBtn);
 
 let slideIndex = 1;
 showSlides(slideIndex);
