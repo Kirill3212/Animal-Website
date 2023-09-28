@@ -443,8 +443,14 @@ main h1 strong{
     margin-bottom: 15px;
 }
 
+.achievements-intro{
+    margin-bottom: 25px;
+}
+
 .achievements-text h3{
-    margin: 20px 0;
+    margin: 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted black;
 }
 
 .achievements-text h3 strong{
@@ -558,6 +564,53 @@ main h1 strong{
 .active,
 .demo:hover {
     opacity: 1;
+}
+
+/* SignUp Section */
+.signUp-form{
+    background-color: var(--lightgrey);
+    margin-bottom: 50px;
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signUp-txt h2{
+    margin-bottom: 8px;
+}
+
+.signUp-txt p strong{
+    color: var(--darkgrey);
+}
+
+.signUp-input{
+    display: flex;
+    height: 45px;
+    margin-right: 130px;
+}
+
+.signUp-input input{
+    width: 400px;
+    outline:none;
+    padding: 8px;
+    padding-left: 20px;
+    border-top-left-radius: var(--standartBorderRadius);
+    border-bottom-left-radius: var(--standartBorderRadius);
+    border: none;
+}
+
+.signUp-input button{
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 8px;
+    width: 100px;
+    background-color: var(--darkgrey);
+    border-top-right-radius: var(--standartBorderRadius);
+    border-bottom-right-radius: var(--standartBorderRadius);
+    color: var(--white);
+    cursor: pointer;
 }
 
 /* Footer */
