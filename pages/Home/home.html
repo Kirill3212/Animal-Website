@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./home.css" />
+    <script src="./home.js" defer></script>
     <script
       src="https://kit.fontawesome.com/777c2cc2af.js"
       crossorigin="anonymous"
@@ -18,19 +20,37 @@
       <div class="logo">
         <a href="/pages/Home/home.html"> Animals </a>
       </div>
-      <nav class="desktop-main-menu">
-        <ul>
-          <li><a href="../AboutUs/aboutus.html">About Us</a></li>
-          <li><a href="../Blog/blog.html">Blog</a></li>
-          <li><a href="../Collections/collections.html">Collections</a></li>
-          <li><a href="../Favorites/favorites.html">Favorites</a></li>
-          <li><a href="../Lists/lists.html">Lists</a></li>
-          <li><a href="../SignIn/signIn.html">SignIn</a></li>
-        </ul>
-      </nav>
+      <div class="nav-container">
+        <nav class="desktop-main-menu">
+          <ul>
+            <li><a href="../AboutUs/aboutus.html">About Us</a></li>
+            <li><a href="../Blog/blog.html">Blog</a></li>
+            <li><a href="../Collections/collections.html">Collections</a></li>
+            <li><a href="../Favorites/favorites.html">Favorites</a></li>
+            <li><a href="../Lists/lists.html">Lists</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="../SignIn/signIn.html">SignIn</a></li>
+          </ul>
+        </nav>
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
 
-    <!-- Main -->
+    <!-- Side Navbar -->
+    <div class="side-main-menu">
+      <i class="fa-solid fa-xmark"></i>
+      <ul>
+        <li><a href="../AboutUs/aboutus.html">About Us</a></li>
+        <li><a href="../Blog/blog.html">Blog</a></li>
+        <li><a href="../Collections/collections.html">Collections</a></li>
+        <li><a href="../Favorites/favorites.html">Favorites</a></li>
+        <li><a href="../Lists/lists.html">Lists</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="../SignIn/signIn.html">SignIn</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Seaction A-->
     <section class="main-section sec-a">
       <div class="main-section-inner sec-a">
         <h1>See Beauty In Animals</h1>
@@ -46,6 +66,7 @@
       </div>
     </section>
 
+    <!-- Main Seaction B-->
     <section class="main-section sec-b">
       <div class="main-section-inner sec-b">
         <h1>Discover Unbelivable Creatures</h1>
@@ -61,6 +82,7 @@
       </div>
     </section>
 
+    <!-- Main Seaction C-->
     <section class="main-section sec-c">
       <div class="main-section-inner sec-c">
         <h1>Help To Save Animals</h1>
